@@ -1,0 +1,14 @@
+{
+  "name": "test-scenarios",
+  "version": "1.0.0",
+  "description": "Add scenarios to unit tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Riccardo Coppola <ricca509@@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.1.0"
+  }
+}
