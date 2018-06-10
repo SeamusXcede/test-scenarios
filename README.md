@@ -27,10 +27,11 @@ describe("sum", () => {
 
 `scenarios(testScenarios, testsFn)`
 
- - `testScenarios`: `any` contains the test data for every scenario
- - `testsFn`: `Function` the tests to run each time with different data, it can contain a whole `describe` or multiple `it`/`test`. The function will receive the test data and the test index
+- `testScenarios`: `any` contains the test data for every scenario.
+- `testsFn`: `Function` the tests to run each time with different data, it can contain a whole `describe` block or multiple `it`/`test`. The function will be invoked with the data for the scenario and the test index.
 
 ### Note for Jest users
+
 You can achieve the same result as the above by using the following syntax:
 
 ```js

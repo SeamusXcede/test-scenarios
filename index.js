@@ -1,6 +1,4 @@
-function isFunction (value) {
-  return typeof value === 'function';
-}
+const isFunction = value => typeof value === 'function';
 
 const scenarios = (testScenarios, testsFn) => {
   if (!testScenarios) return;
@@ -14,9 +12,7 @@ const scenarios = (testScenarios, testsFn) => {
   const arrayOfTestScenarios = Array.isArray(testScenarios) ?
     testScenarios : [testScenarios];
 
-  arrayOfTestScenarios.forEach((parameters, index) => {
-    return testsFn(parameters, index);
-  });
+  arrayOfTestScenarios.forEach((parameters, index) => testsFn(parameters, index));
 };
 
 module.exports = scenarios;
