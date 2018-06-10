@@ -8,7 +8,7 @@ describe('test-scenarios', () => {
     it('should throw an error', () => {
       expect(() => {
         scenarios([], undefined);
-      }).toThrowError('no test function provided');
+      }).toThrowError('no "testsFn" provided');
     });
   });
 
