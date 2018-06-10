@@ -43,8 +43,8 @@ describe('test-scenarios', () => {
       expect(mockTestsFn).toHaveBeenCalledTimes(1);
     });
 
-    it('should run the tests with the test case', () => {
-      expect(mockTestsFn).toHaveBeenCalledWith('a');
+    it('should run the tests with the test case and the test index', () => {
+      expect(mockTestsFn).toHaveBeenCalledWith('a', 0);
     });
   });
 
@@ -59,10 +59,10 @@ describe('test-scenarios', () => {
       expect(mockTestsFn).toHaveBeenCalledTimes(3);
     });
 
-    it('should run the tests with the test cases', () => {
-      expect(mockTestsFn.mock.calls[0]).toEqual([1]);
-      expect(mockTestsFn.mock.calls[1]).toEqual([3]);
-      expect(mockTestsFn.mock.calls[2]).toEqual([5]);
+    it('should run the tests with the test cases and the test index', () => {
+      expect(mockTestsFn.mock.calls[0]).toEqual([1, 0]);
+      expect(mockTestsFn.mock.calls[1]).toEqual([3, 1]);
+      expect(mockTestsFn.mock.calls[2]).toEqual([5, 2]);
     });
   });
 });

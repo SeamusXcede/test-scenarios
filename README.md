@@ -14,7 +14,7 @@ import scenarios from "test-scenarios";
 describe("sum", () => {
   scenarios(
     [{ a: 1, b: 2, result: 3 }, { a: -1, b: 1, result: 0 }],
-    ({ a, b, result }) => {
+    ({ a, b, result }, testIndex) => {
       describe(`When ${a} and ${b} are passed`, () => {
         it(`should return ${result}`, () => {
           expect(sum(a, b)).toEqual(result);

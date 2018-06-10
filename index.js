@@ -14,8 +14,8 @@ const scenarios = (testScenarios, testsFn) => {
   const arrayOfTestScenarios = Array.isArray(testScenarios) ?
     testScenarios : [testScenarios];
 
-  arrayOfTestScenarios.forEach(parameters => {
-    return testsFn(parameters);
+  arrayOfTestScenarios.forEach((parameters, index) => {
+    return testsFn(parameters, index);
   });
 };
 
