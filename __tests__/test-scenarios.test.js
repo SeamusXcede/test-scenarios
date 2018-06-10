@@ -8,7 +8,15 @@ describe('test-scenarios', () => {
     it('should throw an error', () => {
       expect(() => {
         scenarios([], undefined);
-      }).toThrow();
+      }).toThrowError('no test function provided');
+    });
+  });
+
+  describe('when test function argument is not a function', () => {
+    it('should throw an error', () => {
+      expect(() => {
+        scenarios([], 'a string but should be a function');
+      }).toThrowError('should be a function');
     });
   });
 
