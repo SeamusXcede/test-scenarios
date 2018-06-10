@@ -1,9 +1,9 @@
-const scenarios = (testScenarios, testsToRun) => {
+const scenarios = (testScenarios, testsFn) => {
   const arrayOfTestScenarios = Array.isArray(testScenarios) ?
     testScenarios : [testScenarios];
 
   arrayOfTestScenarios.forEach(parameters => {
-    return testsToRun(parameters);
+    return testsFn(parameters);
   });
 };
 
