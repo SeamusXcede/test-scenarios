@@ -1,6 +1,8 @@
 # test-scenarios
 
-Create multiple scenarios to run your tests against.
+Easily run the same unit test with different test data. 
+
+Not tied to a specific library, it can be used with [mocha](https://mochajs.org/), [jasmine](https://jasmine.github.io/), [jest](https://facebook.github.io/jest/) and any library where the tests are defined within a function.
 
 ## Example
 
