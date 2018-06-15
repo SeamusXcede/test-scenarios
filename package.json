@@ -1,14 +1,15 @@
 {
   "name": "test-scenarios",
   "version": "1.0.0",
-  "description": "Add scenarios to unit tests",
+  "description": "Easily run the same unit test with different test data.",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
-  "author": "Riccardo Coppola <ricca509@@gmail.com>",
-  "license": "ISC",
+  "author": "Riccardo Coppola <ricca509@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "jest": "^23.1.0"
-  }
+  },
+  "dependencies": {}
 }

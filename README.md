@@ -1,8 +1,13 @@
 # test-scenarios
 
-Easily run the same unit test with different test data. 
+Easily run the same unit test with different test data.
 
-Not tied to a specific library, it can be used with [mocha](https://mochajs.org/), [jasmine](https://jasmine.github.io/), [jest](https://facebook.github.io/jest/) and any library where the tests are defined within a function.
+Not tied to a specific library, it can be used with
+
+- [mocha](https://mochajs.org/)
+- [jasmine](https://jasmine.github.io/)
+- [jest](https://facebook.github.io/jest/)
+- any library where tests are defined within a function.
 
 ## Example
 
@@ -14,9 +19,9 @@ export const sum = (a, b) => a + b;
 import scenarios from "test-scenarios";
 
 describe("sum", () => {
-  scenarios([ 
-    { a: 1, b: 2, result: 3 }, 
-    { a: -1, b: 1, result: 0 } 
+  scenarios([
+    { a: 1, b: 2, result: 3 },
+    { a: -1, b: 1, result: 0 }
   ], ({ a, b, result }, testIndex) => {
     describe(`When ${a} and ${b} are passed`, () => {
       it(`should return ${result}`, () => {
