@@ -11,5 +11,15 @@
   "devDependencies": {
     "jest": "^23.1.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "keywords": [
+    "unit-testing",
+    "test",
+    "testing",
+    "runner",
+    "jest",
+    "mocha",
+    "jasmine"
+  ],
+  "repository": "ricca509/test-scenarios"
 }
