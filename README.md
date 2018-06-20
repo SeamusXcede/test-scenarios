@@ -22,7 +22,7 @@ describe("sum", () => {
   scenarios([
     { a: 1, b: 2, result: 3 },
     { a: -1, b: 1, result: 0 }
-  ], ({ a, b, result }, testIndex) => {
+  ], ({ a, b, result }, scenarioIndex) => {
     describe(`When ${a} and ${b} are passed`, () => {
       it(`should return ${result}`, () => {
         expect(sum(a, b)).toEqual(result);
@@ -37,7 +37,9 @@ describe("sum", () => {
 `scenarios(testScenarios, testsFn)`
 
 - `testScenarios`: `any` contains the test data for every scenario.
-- `testsFn`: `Function` the tests to run each time with different data, it can contain a whole `describe` block or multiple `it`/`test`. The function will be invoked with the data for the scenario and the test index.
+- `testsFn`: `Function` the test function to run each time with different data, it can be a whole `describe` block or multiple `it`/`test` wrapped into a function. It will be invoked with:
+  - `parameters`: `any` the data for the scenario
+  - `index`: `number` the scenario index
 
 ### Note for Jest users
 
