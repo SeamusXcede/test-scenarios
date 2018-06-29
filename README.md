@@ -32,6 +32,16 @@ describe("sum", () => {
 });
 ```
 
+Example output
+```
+ PASS  ./sum.test.js
+  sum
+    Case 0: when 1 and 2 are passed
+      ✓ should return 3 (4ms)
+    Case 1: when -1 and 1 are passed
+      ✓ should return 0
+```
+
 ## API
 
 `scenarios(testScenarios, testsFn)`
