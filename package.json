@@ -4,12 +4,14 @@
   "description": "Easily run the same unit test with different test data.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prettify": "prettier --write index.js"
   },
   "author": "Riccardo Coppola <ricca509@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^23.1.0"
+    "jest": "^23.1.0",
+    "prettier": "1.13.7"
   },
   "dependencies": {},
   "keywords": [
